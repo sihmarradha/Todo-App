@@ -1,0 +1,128 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a:hover {
+    opacity: 0.9;
+}
+
+.navbar {
+    display: flex;
+    background: linear-gradient(-120deg, #378dd2, #12191d);
+    padding: 15px;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar li a {
+    color: white;
+    font-size: 12px;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form {
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    background-color: #efefef;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    transform: scale(1.2);
+}
+
+.form input {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 10px;
+    color: #1d1d1d;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #cccccc;
+    padding: 10px 5px;
+    letter-spacing: 0.96px;
+    font-weight: lighter;
+}
+
+.form a {
+    font-weight: lighter;
+    font-size: 12px;
+    color: #1d1d1d;
+    display: block;
+}
+
+.form button {
+    outline: none;
+    border: 0;
+    width: 90px;
+    font-size: 10px;
+    padding: 10px 0;
+    background: linear-gradient(-120deg, #378dd2, #12191d);
+    color: #ffffff;
+    letter-spacing: 0.69px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.todo-list ul li {
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 10px 5px;
+    letter-spacing: 0.45px;
+    cursor: pointer;
+    font-size: 11px;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dele-btn {
+    padding: 7px;
+    border-radius: 2px;
+    font-size: 10px;
+    background-color: white;
+    letter-spacing: 0.65px;
+    color: red !important;
+}
+
+.links {
+    padding: 4px;
+    font-size: 14px;
+}
+
+.auth-links {
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    align-items: center;
+}

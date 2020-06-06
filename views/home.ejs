@@ -1,0 +1,20 @@
+<div class="form">
+    <form action="/user/save-todo" method="post">
+        <h1>TODO</h1>
+        <input type="text" name="todoName" id="todoName" placeholder="Enter your todo">
+        <button type="submit">SAVE</button>
+    </form>
+    <div class="todo-list">
+        <% if (locals.user && locals.user.todoArr.length) {%>
+            <ul>
+                <% for (let todo of locals.user.todoArr) {%>
+                   <li> <%=todo.todoName%>
+                       <a href="/user/delete-todo/?id=<%=todo._id%>" class="dele-btn">X</a>
+                   </li>
+                <% }%>
+            </ul>
+        <% } else {%>
+            <h1>No todo found</h1>
+        <% }%>
+    </div>
+</div>
